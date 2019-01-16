@@ -1,7 +1,12 @@
 /* Show it is fixed to the top */
 /* Add a black background color to the top navigation */
+body {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  color: white;
+}
+
 .topnav {
- background-color: #333;
+  background-color: #333!important;
  overflow: hidden;
 }
 
@@ -9,28 +14,17 @@
 .topnav a {
  float: left;
  display: block;
- color: #f2f2f2;
  text-align: center;
  padding: 14px 16px;
  text-decoration: none;
+ color: #f2f2f2;
  font-size: 17px;
-}
-
-.container-fluid {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
  background-color: #007bff;
  color: black;
-}
-
-/* Add an active class to highlight the current page */
-.active {
- background-color: #ff9700;
- color: white;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -62,11 +56,12 @@
  }
 }
 
+#avatar {
+  border-radius: 100%!important;
+}
+
 #first {
-  background: #f12711;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(left, #f5af19, #f12711);
-  background: -o-linear-gradient(left, #f5af19, #f12711);
-  background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-color: inherit;
 }
 
 #first p {
@@ -77,8 +72,12 @@
   font-size: 1.5em;
 }
 
+#second {
+  background-color: #322174;
+}
+
 footer {
-  background-color: #333;
+  background-image: inherit;
   color: white;
 }
 
